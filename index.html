@@ -811,7 +811,7 @@
           <div class="doc-meta">
             Invoice No &nbsp;&nbsp; <strong class="inv-no-val" id="t_invoice">—</strong><br>
             Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong id="t_date">—</strong><br>
-            Booked By &nbsp; <strong id="t_bookedBy">—</strong>
+            Booked For &nbsp; <strong id="t_bookedBy">—</strong>
           </div>
         </div>
       </div>
@@ -1248,7 +1248,7 @@
       const { jsPDF } = window.jspdf;
       const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4", compress: true });
       pdf.addImage(imgData, "PNG", 0, 0, 210, 297, undefined, 'FAST');
-      pdf.save("ShaanTravels_" + invoiceNo + ".pdf");
+      pdf.save("AsadTravels_" + invoiceNo + ".pdf");
     } catch (err) {
       alert("Error generating PDF: " + err.message);
     }
